@@ -2,7 +2,9 @@
 
 
 from views import db
+
 import datetime
+
 
 class Task(db.Model):
 
@@ -27,8 +29,10 @@ class Task(db.Model):
     def __repr__(self):
         return '<name {0}>'.format(self.name)
 
+
 class User(db.Model):
-    __tablename__ = "users"
+
+    __tablename__ = 'users'
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, unique=True, nullable=False)
