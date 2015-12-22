@@ -1,6 +1,10 @@
 body {
-  padding: 60px 0;
-  background: #ffffff;
+  font-family: sans-serif;
+  background: #eee;
+}
+
+a, h1, h2 {
+  color: #377BA8;
 }
 
 h1, h2 {
@@ -62,6 +66,7 @@ h2 {
 .error {
   color: red;
   font-size: .8em;
+  background-color: #FFFFFF;
 }
 
 .datagrid table {
@@ -109,10 +114,6 @@ h2 {
 
 .datagrid table tbody tr:last-child td {
   border-bottom: none;
-}
-
-.footer {
- padding-top: 30px;
 }
 
 .button {

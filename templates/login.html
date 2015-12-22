@@ -1,14 +1,13 @@
-{% extends "_base.html" %}
 
+{% extends "_base.html" %}
 {% block content %}
 
 <h1>Welcome to FlaskTaskr.</h1>
-<h3>Please sign in to access your task list</h3>
-
+<div class="lead">Please sign in to access your task list</div>
 <form class="form-signin" role="form" method="post" action="/">
   {{ form.csrf_token }}
     <p>
-    {{ form.name(placeholder="email address") }}
+    {{ form.name(placeholder="name") }}
     <span class="error">
       {% if form.name.errors %}
         {% for error in form.name.errors %}
